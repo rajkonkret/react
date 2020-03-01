@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 import './Header.scss';
 
 export class Header extends React.Component {
@@ -13,10 +13,10 @@ export class Header extends React.Component {
                 <nav className="Header__nav">
                     <ul>
                         <li>
-                            <a href="">Strona główna</a>
+                            <Link to="/">Strona główna</Link>
                         </li>
                         <li>
-                            <a href="">Archiwum</a>
+                            <Link to="/posts/create">Archiwum</Link>
                         </li>
                     </ul>
                 </nav>
