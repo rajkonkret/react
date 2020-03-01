@@ -1,77 +1,8 @@
 @import './colors.scss';
 
-* {
-    box-sizing: border-box;
-}
 
-body {
-    min-height: 100vh;
-    background: #f1f1f1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
-    @media (orientation: portrait) {
-        background: yellow;
-    }
 
-    @media (orientation: landscape) {
-        background: red;
-    }
-}
-
-main {
-    margin-top: 100px;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.page-header,
-.page-footer {
-    height: 100px;
-    background: $navy;
-    color: $white;
-    display: flex;
-}
-
-.page-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 20px;
-    justify-content: space-between;
-    align-items: center;
-
-    &__logo { // & = .page-header
-        margin: 0;
-        line-height: 1px;
-
-        & {} // & = .page-header__logo
-    }
-
-    &__nav {
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-
-            li {
-                margin: 0 0 0 15px;
-            }
-        }
-    }
-}
-
-.page-footer {
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-}
 
 .post-archive {
     display: flex;

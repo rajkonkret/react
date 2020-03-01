@@ -1,0 +1,35 @@
+@import '../../colors.scss';
+
+.Header {
+    height: 100px;
+    background: $navy;
+    color: $white;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo { // & = .page-header
+        margin: 0;
+        line-height: 1px;
+
+        & {} // & = .page-header__logo
+    }
+
+    &__nav {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                margin: 0 0 0 15px;
+            }
+        }
+    }
+}
