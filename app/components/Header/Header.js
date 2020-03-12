@@ -7,7 +7,7 @@ export class Header extends React.Component {
         return (
             <header className="Header">
                 <h1 className="Header__logo">
-                    <img src="https://www.placecage.com/c/300/70" alt="Company Beta" />
+                <Link to="/"><img src="https://www.placecage.com/c/300/70" alt="Company Beta" /></Link>
                 </h1>
 
                 <nav className="Header__nav">

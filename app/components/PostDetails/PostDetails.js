@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-
+import './PostDetails.scss';
 
 export class PostDetails extends React.Component {
    constructor(props) {
@@ -24,9 +24,11 @@ export class PostDetails extends React.Component {
         }
         const {title, body} = this.state.post;
         return (
-            <article>
+            <article >
+                <div class="PostDetails">
                 <h1>{title}</h1>
                 <div>{body}</div>
+                </div>
             </article>
         );
     }

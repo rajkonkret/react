@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import './PostListItem.scss';
 export class PostListItem extends React.Component {
     render() {
 

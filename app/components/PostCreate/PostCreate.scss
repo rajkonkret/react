@@ -1,0 +1,18 @@
+@import '../../colors.scss';
+* {
+    box-sizing: border-box;
+}
+
+form div {
+
+  color: green;
+    
+}
+  
+
+.TextArea {
+    display: flex;
+    justify-content: center;
+    color: red;
+    margin-top: 50px;
+}
